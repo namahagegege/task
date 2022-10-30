@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .box-wrapper {
+        display: flex;
+        width: 800px;
+        height: auto;
+      }
+      #left-box {
+        width: 300px;
+        margin-left: 50px;
+        height: 300px;
+        border: 1px solid;
+      }
+      #right-box {
+        width: 300px;
+        margin-right: 50px;
+        height: 300px;
+        border: 1px solid;
+      }
+      .container {
+        width: 800px;
+      }
+      p {
+        margin-left: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .button-box {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .blank {
+        widows: 100px;
+      }
+      .arrow {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      .left-arrow {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 220px;
+      }
+    </style>
+    <title>課題</title>
+  </head>
+  <body>
+    <h1>課題です。</h1>
+    <div class="container">
+      <p>左のセレクトボックスから選択してください</p>
+      <div class="box-wrapper">
+        <div id="left-box">
+          <p class="text"><a href="#" class="left-link">HTML</a></p>
+          <p class="text"><a href="#" class="left-link">CSS</a></p>
+          <p class="text"><a href="#" class="left-link">JavaScript</a></p>
+          <p class="text"><a href="#" class="left-link">jQuery</a></p>
+          <p class="text"><a href="#" class="left-link">PHP</a></p>
+          <p class="text"><a href="#" class="left-link">MySQL</a></p>
+        </div>
+        <div class="blank">
+          <p class="arrow right-arrow">>>></p>
+          <p class="arrow left-arrow"><<<</p>
+        </div>
+        <div id="right-box">
+          <!--  -->
+        </div>
+      </div>
+      <div class="button-box">
+        <button id="click-button">送信</button>
+      </div>
+    </div>
+    <script src="task.js"></script>
+  </body>
+</html>
